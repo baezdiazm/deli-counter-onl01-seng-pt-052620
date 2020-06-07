@@ -27,7 +27,7 @@ def line(katz_deli)
 
 
 def now_serving(katz_deli)
-  if katz_deli.legth > 0
+  if katz_deli.length > 0
 puts "Now Serving: #{katz_deli[0]}"
 katz_deli.shift
 else
