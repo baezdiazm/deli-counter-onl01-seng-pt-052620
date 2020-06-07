@@ -1,7 +1,33 @@
-# Write your code here.
-katz_deli = []
-counter
-def take_a_number(katz_deli, customer)
-puts "Hello, #{customer}. You are number #{katz_deli.legth} in line."
+katz_deli = ["Cha", "Ricardo"]
+
+
+def take_a_number(line, name)
+line << name
+puts "Welcome, #{name}. You are number #{line.length} in line."
+end
+
+
+
+
+def line(katz_deli)
+
+  if katz_deli.length >= 1
+    emptyarray = []
+    index = 1
+   katz_deli.each do |name| emptyarray.push("#{index}. #{name}")
+      index +=1
+    end
+     puts "The line is currently: #{emptyarray.join(" ")}"
+  else
+       puts "The line is currently empty."
+     end
+   end
+
+
+
+
+def now_serving(katz_deli)
+puts "Now Serving: #{katz_deli[0]}"
+katz_deli.shift
 
 end
